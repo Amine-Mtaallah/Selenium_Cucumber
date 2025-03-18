@@ -1,15 +1,11 @@
-@tag
-Feature: Title of your feature
-  I want to use this template for my feature file
+@authentification
+Feature: Authentification de l application SwagLabs
+  En tant que utilisateur je souhaite m ithentifier
 
-  @tag1
-  Scenario: Title of your scenario
-    Given I want to write a step with precondition
-    And some other precondition
-    When I complete action
-    And some other action
-    And yet another action
-    Then I validate the outcomes
-    And check more outcomes
-
-
+  @login_CasPassant
+  Scenario: Authentification de l application SwagLabs cas passant
+    Given Je me connecte sur l application SwagLabs
+    When Je saisis le user name "standard_user"
+    And Je saisis le password "secret_sauce"
+    And Je clique sur le bouton Login
+    Then Je me redirige vers la page Home "Products"
