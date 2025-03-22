@@ -1,11 +1,11 @@
 @authentification
-Feature: Authentification de l application SwagLabs
+Feature: Authentification de l application nopcommerce
   En tant que utilisateur je souhaite m ithentifier
 
   @login_CasPassant
-  Scenario: Authentification de l application SwagLabs cas passant
-    Given Je me connecte sur l application SwagLabs
-    When Je saisis le user name "standard_user"
-    And Je saisis le password "secret_sauce"
-    And Je clique sur le bouton Login
-    Then Je me redirige vers la page Home "Products"
+  Scenario: Authentification de l application nopcommerce cas passant
+    Given Je me connecte sur l application nopcommerce
+    When Je saisis le Email "admin@yourstore.com"
+    And Je saisis le Password "admin"
+    And Je clique sur le bouton LogIn
+    Then Je me redirige vers la page Home ""
